@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Muskaan Bharti | General & Laparoscopic Surgeon, Jaynagar</title>
+  <meta name="description" content="Dr. Muskaan Bharti – MS General Surgery, FMAS, DMAS. Expert laparoscopic surgeon and endoscopist serving Jaynagar, Madhubani. Online consultations available on WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── TOKENS ─────────────────────────────────────────── */
+    :root {
+      --rose:       #C9748A;   /* warm dusty rose */
+      --mauve:      #9B6B8A;   /* deep mauve/purple */
+      --blush:      #F2D9E0;   /* lightest blush bg */
+      --lavender:   #E8D5F0;   /* soft lavender accent */
+      --plum:       #5C3460;   /* deep plum for headings */
+      --cream:      #FDF8F9;   /* near-white warm bg */
+      --mid:        #7A5270;   /* mid purple for body text */
+      --dark:       #2E1A2E;   /* darkest, near-black plum */
+      --gold:       #C9A84C;   /* warm gold for credentials */
+      --white:      #FFFFFF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.65;
+    }
+
+    .hindi {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--plum);
+    }
+
+    /* ── NAV ────────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253,248,249,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--blush);
+      padding: 0 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--plum);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--rose); }
+
+    .nav-cta {
+      background: var(--rose);
+      color: var(--white) !important;
+      padding: 0.45rem 1.1rem;
+      border-radius: 100px;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--mauve) !important; color: var(--white) !important; }
+
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--plum); display: block; transition: all 0.3s; }
+
+    /* ── HERO ───────────────────────────────────────────── */
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 0;
+      padding: 0 5vw;
+      background: linear-gradient(135deg, var(--cream) 55%, var(--lavender) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -80px;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, var(--blush) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-text { padding-right: 4vw; position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--rose);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .hero-name {
+      font-size: clamp(2.4rem, 4.5vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--plum);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-style: italic;
+      color: var(--mauve);
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .hero-hindi {
+      font-size: 1rem;
+      color: var(--mid);
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--plum);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--mid);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--rose);
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 20px rgba(201,116,138,0.35);
+    }
+
+    .btn-primary:hover { background: var(--mauve); transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1.5px solid var(--mauve);
+      color: var(--mauve);
+      text-decoration: none;
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover { background: var(--mauve); color: var(--white); }
+
+    /* ── HERO IMAGE ─────────────────────────────────────── */
+    .hero-image-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 88vh;
+    }
+
+    .hero-img {
+      height: 85%;
+      max-height: 680px;
+      width: auto;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 240px 240px 0 0;
+      box-shadow: 0 20px 60px rgba(92,52,96,0.18);
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 60px;
+      left: -10px;
+      background: var(--white);
+      border-radius: 16px;
+      padding: 0.8rem 1.1rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      z-index: 2;
+      min-width: 180px;
+    }
+
+    .badge-label {
+      font-size: 0.68rem;
+      color: var(--rose);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+    }
+
+    .badge-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--plum);
+      margin-top: 0.1rem;
+    }
+
+    .hero-badge2 {
+      position: absolute;
+      top: 100px;
+      right: -20px;
+      background: var(--plum);
+      color: var(--white);
+      border-radius: 14px;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      z-index: 2;
+      line-height: 1.5;
+      box-shadow: 0 8px 25px rgba(92,52,96,0.3);
+    }
+
+    /* ── SECTION BASE ───────────────────────────────────── */
+    section { padding: 80px 5vw; }
+
+    .section-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--rose);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 600;
+      color: var(--plum);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--mid);
+      max-width: 560px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── CREDENTIALS STRIP ──────────────────────────────── */
+    .credentials-strip {
+      background: var(--plum);
+      padding: 28px 5vw;
+      overflow: hidden;
+    }
+
+    .cred-scroll {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cred-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--lavender);
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    .cred-dot {
+      width: 5px; height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── ABOUT ──────────────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 5vw;
+      align-items: center;
+    }
+
+    .about-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .about-img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .about-img:first-child {
+      margin-top: 2rem;
+      border-radius: 120px 120px 16px 16px;
+    }
+
+    .about-text p {
+      color: var(--mid);
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .qualifications {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .qual-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+
+    .qual-icon {
+      width: 22px; height: 22px;
+      background: var(--blush);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+      color: var(--rose);
+      font-size: 0.7rem;
+    }
+
+    /* ── SERVICES ───────────────────────────────────────── */
+    .services-section { background: var(--blush); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 2rem 1.6rem;
+      border: 1px solid rgba(201,116,138,0.15);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .service-card:hover {
+      box-shadow: 0 12px 40px rgba(92,52,96,0.12);
+      transform: translateY(-4px);
+    }
+
+    .service-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--plum);
+    }
+
+    .service-card p {
+      font-size: 0.83rem;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+
+    .service-tag {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--rose);
+      background: var(--blush);
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+    }
+
+    /* ── CONSULTATION ───────────────────────────────────── */
+    .consult-section {
+      background: linear-gradient(135deg, var(--plum) 0%, var(--mauve) 100%);
+      color: var(--white);
+    }
+
+    .consult-section .section-title { color: var(--white); }
+    .consult-section .section-eyebrow { color: var(--lavender); }
+    .consult-section .section-subtitle { color: rgba(255,255,255,0.75); }
+
+    .consult-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .consult-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .consult-card h3 {
+      color: var(--lavender);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .price-big {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .price-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 0.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .consult-detail {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      margin-bottom: 0.7rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .consult-detail-icon { margin-top: 1px; flex-shrink: 0; }
+
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #25D366;
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.9rem 1.8rem;
+      border-radius: 100px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      margin-top: 1.2rem;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+
+    .whatsapp-btn:hover { background: #1aab52; transform: translateY(-2px); }
+
+    .hindi-consult {
+      background: rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 1.4rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.9;
+    }
+
+    /* ── GALLERY ────────────────────────────────────────── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .gallery-img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 16px 50px rgba(92,52,96,0.2);
+    }
+
+    .gallery-img:nth-child(2) { margin-top: 2rem; }
+    .gallery-img:nth-child(3) { margin-top: -1rem; }
+
+    /* ── HEALTH TIPS ────────────────────────────────────── */
+    .tips-section { background: var(--lavender); }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .tip-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+
+    .tip-card h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--plum);
+      margin-bottom: 0.4rem;
+    }
+
+    .tip-card .hindi { font-size: 0.85rem; color: var(--rose); margin-bottom: 0.5rem; }
+
+    .tip-card p { font-size: 0.82rem; color: var(--mid); line-height: 1.6; }
+
+    /* ── CONTACT ────────────────────────────────────────── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+      width: 42px; height: 42px;
+      background: var(--blush);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--rose);
+      font-weight: 500;
+    }
+
+    .contact-value {
+      font-size: 0.92rem;
+      color: var(--dark);
+      margin-top: 0.1rem;
+    }
+
+    .contact-value a {
+      color: var(--dark);
+      text-decoration: none;
+    }
+
+    .contact-value a:hover { color: var(--rose); }
+
+    .map-placeholder {
+      background: var(--blush);
+      border-radius: 20px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: var(--mauve);
+      font-size: 0.85rem;
+      text-align: center;
+      border: 2px dashed rgba(155,107,138,0.3);
+    }
+
+    .map-placeholder a {
+      color: var(--rose);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.5);
+      padding: 2.5rem 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--lavender);
+    }
+
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-links a:hover { color: var(--rose); }
+
+    /* ── FLOATING WHATSAPP ──────────────────────────────── */
+    .float-wa {
+      position: fixed;
+      bottom: 28px;
+      right: 24px;
+      width: 56px; height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+      z-index: 999;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .float-wa:hover { transform: scale(1.1); }
+
+    .float-wa svg { width: 28px; height: 28px; fill: white; }
+
+    /* ── MOBILE ─────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+        min-height: auto;
+        text-align: center;
+      }
+
+      .hero-image-wrap { height: 55vw; margin-bottom: 2rem; order: -1; }
+      .hero-img { height: 100%; border-radius: 50%; width: 55vw; object-fit: cover; }
+      .hero-badge, .hero-badge2 { display: none; }
+      .hero-stats { justify-content: center; }
+      .hero-actions { justify-content: center; }
+      .hero-text { padding-right: 0; }
+
+      .about-grid { grid-template-columns: 1fr; }
+      .about-images { display: none; }
+
+      .consult-grid { grid-template-columns: 1fr; }
+
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-img { margin-top: 0 !important; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+
+      footer { flex-direction: column; text-align: center; }
+
+      section { padding: 60px 5vw; }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#">Dr. Muskaan Bharti</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#consult">Consult Online</a></li>
+      <li><a href="#health-tips">Health Tips</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://wa.me/919748497299" target="_blank" class="nav-cta">Book on WhatsApp</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Muskaan Clinic · Jaynagar, Madhubani</p>
+      <h1 class="hero-name">Dr. Muskaan<br/>Bharti</h1>
+      <p class="hero-title">MS Surgery · FMAS · DMAS · Endoscopist</p>
+      <p class="hero-hindi hindi">जनरल और लैप्रोस्कोपिक सर्जन<br/>महिला स्वास्थ्य की विश्वसनीय साथी</p>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">7+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Emergency Care</div>
+        </div>
+        <div>
+          <div class="stat-num">2</div>
+          <div class="stat-label">Clinic Locations</div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://wa.me/919748497299" target="_blank" class="btn-primary">
+          📱 Book Consultation
+        </a>
+        <a href="#services" class="btn-secondary">View Services</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <img src="63285.jpg" alt="Dr. Muskaan Bharti" class="hero-img" />
+      <div class="hero-badge">
+        <div class="badge-label">Online Consult</div>
+        <div class="badge-text">6 PM – 8 PM<br/>on WhatsApp</div>
+      </div>
+      <div class="hero-badge2">
+        🌟 WALS Member<br/>Robotic Surgery Trained
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS STRIP -->
+  <div class="credentials-strip">
+    <div class="cred-scroll">
+      <div class="cred-item"><span class="cred-dot"></span>MBBS – RGUHS, Mangalore</div>
+      <div class="cred-item"><span class="cred-dot"></span>MS General Surgery – MGM, Kishanganj</div>
+      <div class="cred-item"><span class="cred-dot"></span>FMAS & DMAS – Minimal Access Surgery</div>
+      <div class="cred-item"><span class="cred-dot"></span>Fellowship in Upper & Lower GI Endoscopy</div>
+      <div class="cred-item"><span class="cred-dot"></span>WALS Life Member</div>
+      <div class="cred-item"><span class="cred-dot"></span>Robotic Surgery Trained</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-images">
+        <img src="63266.jpg" alt="Dr. Muskaan in clinic" class="about-img" />
+        <img src="63346.jpg" alt="Dr. Muskaan in surgery" class="about-img" />
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">About Dr. Muskaan</p>
+        <h2 class="section-title">Surgeon. Educator.<br/>Your Health Partner.</h2>
+        <p>Dr. Muskaan Bharti is a General and Laparoscopic Surgeon with over 7 years of surgical experience, currently practicing at Muskaan Clinic, Station Road, Jaynagar, Madhubani. She runs the clinic alongside her husband, Dr. [Partner], a General Surgeon and Endo-Urologist, providing round-the-clock surgical care to the region.</p>
+        <p>Trained in robotic surgery and fellowship-certified in GI endoscopy, Dr. Muskaan brings advanced surgical expertise to rural Bihar — a region that deserves the same quality of care as any metro city.</p>
+        <p>Beyond the operation theatre, she is deeply passionate about <strong>surgical awareness</strong> and <strong>women's health education</strong> — helping women understand their bodies, their rights, and their healthcare choices through her Instagram <em>@stitches_and_glitches</em>.</p>
+        <p class="hindi" style="font-size:0.9rem; color:var(--mauve); margin-top: 0.5rem;">हमारा लक्ष्य है कि हर महिला अपने स्वास्थ्य के बारे में जागरूक और सशक्त हो।</p>
+
+        <div class="qualifications">
+          <div class="qual-item">
+            <div class="qual-icon">🎓</div>
+            <span><strong>MBBS</strong> – A.J. Institute of Medical Sciences, Mangalore (RGUHS)</span>
+          </div>
+          <div class="qual-item">
+            <div class="qual-icon">🏥</div>
+            <span><strong>MS General Surgery</strong> – MGM Medical College & LSK Hospital, Kishanganj</span>
+          </div>
+          <div class="qual-item">
+            <div class="qual-icon">🔬</div>
+            <span><strong>FMAS & DMAS</strong> – Fellowship & Diploma in Minimal Access Surgery</span>
+          </div>
+          <div class="qual-item">
+            <div class="qual-icon">🎯</div>
+            <span><strong>Fellowship in GI Endoscopy</strong> – Upper & Lower, WLH Gurgaon</span>
+          </div>
+          <div class="qual-item">
+            <div class="qual-icon">🤖</div>
+            <span><strong>Trained in Robotic Surgery</strong></span>
+          </div>
+          <div class="qual-item">
+            <div class="qual-icon">🌍</div>
+            <span><strong>Life Member</strong> – World Association of Laparoscopic Surgeons (WALS)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+    <p class="section-eyebrow">What We Treat</p>
+    <h2 class="section-title">Services at Muskaan Clinic</h2>
+    <p class="section-subtitle">हम यहाँ हैं आपकी हर सर्जिकल जरूरत के लिए — from routine to complex.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🔪</div>
+        <h3>Laparoscopic Surgery</h3>
+        <p>Minimally invasive procedures including Cholecystectomy (gallbladder removal), Appendectomy, Diagnostic Laparoscopy, and perforation repair.</p>
+        <span class="service-tag">Keyhole Surgery</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🩺</div>
+        <h3>General Surgical Procedures</h3>
+        <p>Full spectrum of general surgery including emergency surgeries, abdominal procedures, and 24-hour critical care.</p>
+        <span class="service-tag">24/7 Emergency</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💊</div>
+        <h3>Perianal Surgery</h3>
+        <p>Expert treatment of Haemorrhoids (Piles), Fissure, and Fistula with latest minimal-trauma techniques.</p>
+        <span class="service-tag">Piles · Fissure · Fistula</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🤰</div>
+        <h3>Obstetrics & Gynaecology</h3>
+        <p>OPD and OT procedures including Caesarean Section (C-Section) and Abdominal Hysterectomy. Safe surgical care for women.</p>
+        <span class="service-tag">Women's Health</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔭</div>
+        <h3>Endoscopy & Minimal Invasive</h3>
+        <p>Upper GI Endoscopy, Lower GI Endoscopy (Colonoscopy), Cystoscopy, and Hysteroscopy — diagnosed with precision.</p>
+        <span class="service-tag">Endoscopy</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💬</div>
+        <h3>Online Surgical Second Opinion</h3>
+        <p>Unsure about a surgery recommended elsewhere? Get a complete report review and expert second opinion from Dr. Muskaan on WhatsApp.</p>
+        <span class="service-tag">₹1000 · Report Review</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULT ONLINE -->
+  <section id="consult" class="consult-section">
+    <p class="section-eyebrow">Online Consultation</p>
+    <h2 class="section-title">Talk to Dr. Muskaan</h2>
+    <p class="section-subtitle" style="max-width:100%;">Available every evening on WhatsApp. घर बैठे डॉक्टर से बात करें।</p>
+
+    <div class="consult-grid">
+      <div>
+        <div class="consult-card" style="margin-bottom: 1.2rem;">
+          <h3>General Consultation</h3>
+          <div class="price-big">₹600</div>
+          <div class="price-label">Per Session · WhatsApp</div>
+          <div class="consult-detail">
+            <span class="consult-detail-icon">🕕</span>
+            <span>Available: 6:00 PM – 8:00 PM, daily</span>
+          </div>
+          <div class="consult-detail">
+            <span class="consult-detail-icon">📱</span>
+            <span>WhatsApp: +91 97484 97299</span>
+          </div>
+          <div class="consult-detail">
+            <span class="consult-detail-icon">🗣️</span>
+            <span>Hindi / English available</span>
+          </div>
+          <a href="https://wa.me/919748497299?text=Hello%20Dr.%20Muskaan%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" class="whatsapp-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Message on WhatsApp
+          </a>
+        </div>
+
+        <div class="consult-card">
+          <h3>Surgical Second Opinion</h3>
+          <div class="price-big">₹1000</div>
+          <div class="price-label">Complete Report Review</div>
+          <div class="consult-detail">
+            <span class="consult-detail-icon">📋</span>
+            <span>Share reports, scans & previous prescriptions</span>
+          </div>
+          <div class="consult-detail">
+            <span class="consult-detail-icon">✅</span>
+            <span>Detailed written opinion on surgical decisions</span>
+          </div>
+          <a href="https://wa.me/919748497299?text=Hello%20Dr.%20Muskaan%2C%20I%20would%20like%20a%20surgical%20second%20opinion.%20Please%20guide%20me." target="_blank" class="whatsapp-btn" style="background: var(--rose); box-shadow: 0 4px 20px rgba(201,116,138,0.5);">
+            📋 Get Second Opinion
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="hindi-consult hindi">
+          <strong style="color: var(--lavender); font-size: 1rem;">ऑनलाइन परामर्श कैसे लें?</strong><br/><br/>
+          <strong>Step 1:</strong> नीचे दिए WhatsApp बटन पर क्लिक करें<br/>
+          <strong>Step 2:</strong> शाम 6 बजे से 8 बजे के बीच मैसेज करें<br/>
+          <strong>Step 3:</strong> अपनी समस्या और पुरानी रिपोर्ट भेजें<br/>
+          <strong>Step 4:</strong> डॉक्टर से सीधे बात करें<br/><br/>
+          📞 परामर्श शुल्क: ₹600<br/>
+          📋 सर्जिकल राय (रिपोर्ट सहित): ₹1000<br/><br/>
+          <em style="font-size:0.82rem; color: rgba(255,255,255,0.55);">भुगतान GPay / PhonePe / UPI द्वारा किया जा सकता है।</em>
+        </div>
+
+        <div style="margin-top: 1.5rem; background: rgba(255,255,255,0.06); border-radius: 16px; padding: 1.4rem;">
+          <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.8;">
+            📍 <strong style="color: rgba(255,255,255,0.85);">In-person visits:</strong> Muskaan Clinic, Station Road, Jaynagar, Madhubani<br/>
+            📧 <strong style="color: rgba(255,255,255,0.85);">Email:</strong> drmuskaanbharti@gmail.com<br/>
+            🏥 <strong style="color: rgba(255,255,255,0.85);">Emergency:</strong> 24 hours available at clinic
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <p class="section-eyebrow">In the OT & Beyond</p>
+    <h2 class="section-title">Work That Speaks</h2>
+    <p class="section-subtitle">From the operating theatre to patient education — every day at Muskaan Clinic.</p>
+    <div class="gallery-grid">
+      <img src="63289.jpg" alt="Dr. Muskaan in surgery" class="gallery-img" />
+      <img src="65179.jpg" alt="Dr. Muskaan with robotic surgery equipment" class="gallery-img" />
+      <img src="65181.jpg" alt="Dr. Muskaan performing surgery" class="gallery-img" />
+    </div>
+  </section>
+
+  <!-- HEALTH TIPS -->
+  <section id="health-tips" class="tips-section">
+    <p class="section-eyebrow">Patient Education</p>
+    <h2 class="section-title">Know Your Health</h2>
+    <p class="section-subtitle">Simple, important health information — because an informed patient heals better.</p>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h4>Know the Signs of Appendicitis</h4>
+        <div class="hindi">अपेंडिक्स के लक्षण जानें</div>
+        <p>Sudden pain starting around the navel moving to the lower right abdomen, fever, nausea — do not delay. This is a surgical emergency. Reach the nearest hospital immediately.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Piles Are Treatable</h4>
+        <div class="hindi">बवासीर का इलाज संभव है</div>
+        <p>Haemorrhoids (piles) are common and very treatable. Do not suffer in silence due to embarrassment. Modern surgical techniques mean minimal pain and fast recovery.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Cervical Cancer Screening</h4>
+        <div class="hindi">सर्वाइकल कैंसर जाँच ज़रूरी है</div>
+        <p>Every woman above 21 should have a regular Pap smear test. Cervical cancer is almost 100% preventable when detected early. The HPV vaccine is available — ask your doctor.</p>
+      </div>
+      <div class="tip-card">
+        <h4>C-Section vs Normal Delivery</h4>
+        <div class="hindi">सिजेरियन बनाम सामान्य प्रसव</div>
+        <p>A C-section is a major surgery, not a shortcut. It is recommended only when medically necessary. Always ask your surgeon why it's being advised before agreeing.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Get a Second Opinion</h4>
+        <div class="hindi">दूसरी राय लेना आपका अधिकार है</div>
+        <p>Before any major surgery, you have every right to ask another doctor. A responsible surgeon will welcome this. It helps you feel confident and safe about your decision.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Gallstone Symptoms</h4>
+        <div class="hindi">पित्त की पथरी के लक्षण</div>
+        <p>Sudden severe pain in the upper right abdomen, especially after fatty meals, nausea, or yellowing of skin — these could be gallstones. Laparoscopic surgery offers quick, scar-free recovery.</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:2rem; font-size:0.85rem; color: var(--mid);">
+      Follow <a href="https://instagram.com/stitches_and_glitches" style="color: var(--rose); font-weight:500;">@stitches_and_glitches</a> on Instagram for more health education in Hinglish 🌸
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-eyebrow">Find Us</p>
+    <h2 class="section-title">Visit Muskaan Clinic</h2>
+    <p class="section-subtitle">We are available 24 hours for emergencies. Online consultations every evening.</p>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-value">Muskaan Clinic<br/>Station Road, Jaynagar<br/>Madhubani, Bihar</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-label">WhatsApp / Phone</div>
+            <div class="contact-value"><a href="tel:+919748497299">+91 97484 97299</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value"><a href="mailto:drmuskaanbharti@gmail.com">drmuskaanbharti@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="contact-label">Online Consultation Hours</div>
+            <div class="contact-value">Monday – Sunday<br/>6:00 PM – 8:00 PM (WhatsApp)</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">🚨</div>
+          <div>
+            <div class="contact-label">Emergency</div>
+            <div class="contact-value">24 × 7 available at clinic</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📸</div>
+          <div>
+            <div class="contact-label">Instagram</div>
+            <div class="contact-value"><a href="https://instagram.com/stitches_and_glitches" target="_blank">@stitches_and_glitches</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="map-placeholder">
+          <div style="font-size: 2.5rem;">📍</div>
+          <div style="font-weight:500; color: var(--plum);">Muskaan Clinic</div>
+          <div>Station Road, Jaynagar, Madhubani</div>
+          <a href="https://maps.google.com/?q=Jaynagar+Madhubani+Bihar" target="_blank" style="margin-top: 0.5rem;">Open in Google Maps →</a>
+        </div>
+
+        <div style="background: var(--blush); border-radius: 16px; padding: 1.4rem; margin-top: 1.2rem;">
+          <p style="font-size: 0.82rem; color: var(--mid); line-height: 1.8;">
+            <strong class="hindi" style="color: var(--plum); font-size: 0.95rem;">नया ब्रांच जल्द आ रहा है!</strong><br/>
+            We are expanding with a new branch soon. Follow us on Instagram or WhatsApp for updates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="footer-brand">Dr. Muskaan Bharti</div>
+      <div style="margin-top:0.3rem;">MS Surgery · FMAS · DMAS · Endoscopist · Muskaan Clinic, Jaynagar</div>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#consult">Consult</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>© 2025 Dr. Muskaan Bharti · All rights reserved</div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919748497299?text=Hello%20Dr.%20Muskaan%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" class="float-wa" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'absolute';
+      links.style.top = '64px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = 'var(--cream)';
+      links.style.padding = '1.5rem 5vw';
+      links.style.borderBottom = '1px solid var(--blush)';
+      links.style.gap = '1.2rem';
+    }
+
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .tip-card, .contact-info-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
